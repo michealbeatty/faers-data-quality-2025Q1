@@ -22,7 +22,6 @@ These data are used by FDA, researchers, and healthcare professionals to detect 
 - `ffaers_2025Q1.ipynb` – full Jupyter notebook with methodology and visualizations
 - `/images/` – shareable graphics (see below)
 - `/data/README.md` – instructions for downloading raw FDA files
-- `/output/summary_findings.csv` – optional CSV of breakdown by company
 
 ## Visualization Previews
 

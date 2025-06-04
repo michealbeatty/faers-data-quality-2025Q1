@@ -26,6 +26,7 @@ These data are used by FDA, researchers, and healthcare professionals to detect 
 ## Visualization Previews
 
 ![Pie Chart: 4 Companies](images/missing_data_pie.png)
+![Bar Chart: Top 4 Offenders](/images/top_4_offenders.png)
 
 
 ## Reproducibility

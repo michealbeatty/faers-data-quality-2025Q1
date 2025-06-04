@@ -27,7 +27,6 @@ These data are used by FDA, researchers, and healthcare professionals to detect 
 
 ![Pie Chart: 4 Companies](images/missing_data_pie.png)
 
-![Absurd Records](images/absurd_cases_table.png)
 
 ## Reproducibility
 

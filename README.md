@@ -29,6 +29,16 @@ These data are used by FDA, researchers, and healthcare professionals to detect 
 ![Bar Chart: Top 4 Offenders](/images/top_4_offenders.png)
 
 
+## ⚙️ How to Run
+
+1. Clone this repo.
+2. Download the 2022 MCBS Cost Supplement Public Use File:
+   [CMS Link](https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS/MCBS-PUF)
+3. Save the file as `cspuf2022.csv` in the root directory.
+4. Create environment:  
+   `conda env create -f environment.yml`
+5. Open `medicare_analysis_2022.ipynb` in JupyterLab.
+
 ## Reproducibility
 
 All code is reproducible using public FDA data available at:  

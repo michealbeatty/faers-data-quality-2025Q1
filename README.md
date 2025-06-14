@@ -4,7 +4,7 @@
 
 This repository contains an independent analysis of the FDA’s **FAERS** (Federal Adverse Event Reporting System) data for **Q1 2025**, uncovering **significant gaps and anomalies** in how drug safety data is reported by manufacturers.
 
-### 🔍 Key Findings:
+### Key Findings:
 - **17%** of all reports are missing critical demographic fields: **age, sex, and/or weight**
 - Just **4 pharmaceutical companies** — Celltrion, Sunovion, Lupin, and Alexion — are responsible for **27.8%** of those missing reports
 - Records include **impossible values**, such as:
@@ -12,7 +12,7 @@ This repository contains an independent analysis of the FDA’s **FAERS** (Feder
   - A **19-day-old infant** weighing **3,912 kg (8,620 lbs)**
   - Invalid report codes like `5DAY` and `30DAY`
 
-## ⚠Why This Matters
+## Why This Matters
 
 FAERS is the FDA’s primary tool for **detecting safety signals** in post-market drugs. When manufacturers submit incomplete or nonsensical data:
 - Dangerous side effects can go unnoticed

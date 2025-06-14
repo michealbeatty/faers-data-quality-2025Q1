@@ -1,7 +1,5 @@
 
 # FAERS 2025Q1: Systemic Demographic Data Failures in FDA Adverse Event Reporting
-## Access the Full Analysis
-
 
 ## Summary
 

@@ -1,63 +1,51 @@
-# FAERS Q1 2025: Systemic Failures in Adverse Event Data Reporting
+# FAERS 2025Q1: Systemic Data Quality Failures in Adverse Event Reporting
 
-## Summary
+## Overview
 
-This repository contains an independent analysis of the FDA’s **FAERS** (Federal Adverse Event Reporting System) data for **Q1 2025**, uncovering **significant gaps and anomalies** in how drug safety data is reported by manufacturers.
+This project analyzes the FDA’s FAERS database for Q1 2025, uncovering significant failures in basic demographic reporting. The dataset, intended for post-market drug safety surveillance, contains systemic omissions and anomalies that compromise signal detection and regulatory oversight.
 
-### Key Findings:
-- **17%** of all reports are missing critical demographic fields: **age, sex, and/or weight**
-- Just **4 pharmaceutical companies** — Celltrion, Sunovion, Lupin, and Alexion — are responsible for **27.8%** of those missing reports
-- Records include **impossible values**, such as:
-  - An event date listed as **year 1025 AD**
-  - A **19-day-old infant** weighing **3,912 kg (8,620 lbs)**
-  - Invalid report codes like `5DAY` and `30DAY`
+## Key Findings
 
-## Why This Matters
+- **17%** of all reports lack basic patient demographics: age, sex, and weight.
+- **7 companies** exceed the threshold for major non-compliance (3,500+ reports, >50% missing).
+- **3 companies** submitted over 5,000 reports each, with nearly all lacking demographics.
+- Implausible records include:
+  - **A 19-day-old infant** listed as weighing **3,912 kg**.
+  - Event dates from the year **1025 AD** to **2444 AD**.
+  - Misused report types like `5DAY` and `30DAY`.
 
-FAERS is the FDA’s primary tool for **detecting safety signals** in post-market drugs. When manufacturers submit incomplete or nonsensical data:
-- Dangerous side effects can go unnoticed
-- Patient populations (e.g. infants, women) may be underrepresented or excluded
-- Oversight becomes unreliable
+## Why It Matters
 
-This analysis raises concerns about the **FDA’s enforcement of data reporting standards** and the **integrity of its most relied-upon safety dataset**.
-
----
+FAERS is a primary tool for identifying post-market drug risks. When manufacturers fail to report who was affected — or when, or how — the entire system breaks down. These omissions represent more than clerical errors; they are a threat to public health.
 
 ## Files
 
-- `ffaers_2025Q1.ipynb` — Full Jupyter notebook with methodology, analysis, and code
-- `/images/` — Shareable visualizations (see below)
-- `/data/README.md` — How to download raw FDA data
+- `ffaers_2025Q1.ipynb`: Full analysis notebook.
+- `/images/`: Visual assets from the report.
+- `/data/README.md`: How to download the raw FDA dataset.
 
----
+## Visuals
 
-## Visualizations
+### Compliance Spectrum
+![Compliance Spectrum](/images/demographic_reporting_compliance_spectrum.png)
 
-- ![Pie Chart: 4 Companies](images/missing_data_pie.png)
-- ![Bar Chart: Top 4 Offenders](/images/top_4_offenders.png)
+### Age Group Confusion Matrix
+![Confusion Matrix](/images/age_group_confusion_matrix.png)
 
----
+### Major Offender Breakdown
+![Pie Chart](/images/revised_major_offenders_pie.png)
 
 ## Reproducibility
 
-All analysis is based on **publicly available FAERS data**:  
+All code is fully reproducible using public FDA data:  
 [https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html](https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html)
-
-Code is fully documented and reproducible.
-
----
 
 ## Author
 
-**Micheal Beatty**  
-Chicago-based data analyst and civic tech researcher  
-[LinkedIn](https://linkedin.com/in/mwbeatty)
+Micheal Beatty  
+[LinkedIn](https://linkedin.com/in/mwbeatty)  
+Chicago-based data analyst, software engineer, and civic tech advocate.
 
 ---
 
-### Press / Researchers
-
-If you’re reporting on drug safety, FDA oversight, or data quality issues in pharmacovigilance, feel free to reference or contact.
-
-> **Contact:** mikelbt@gmail.com  
-> **Please cite this repo if using in reporting or academic work.**
+**License:** MIT. Feel free to reuse with attribution.
